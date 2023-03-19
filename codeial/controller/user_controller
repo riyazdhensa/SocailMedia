@@ -1,8 +1,0 @@
-
-module.exports.profile=function(req,res){
-    console.log('User control 123');
-
-    return res.render('user.ejs',{
-        title :'User control1'
-    });
-}
