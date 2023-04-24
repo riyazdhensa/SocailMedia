@@ -1,0 +1,120 @@
+#home-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#home-container h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+  text-align: center;
+}
+
+#home-container #feed-posts {
+  flex: 3;
+  padding: 1rem;
+}
+
+#home-container #feed-posts form {
+  margin-bottom: 1rem;
+}
+
+#home-container #feed-posts form textarea {
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #6c757d;
+  resize: none;
+  font-size: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#home-container #feed-posts form input[type="submit"] {
+  width: 130px;
+  margin-top: 0.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#home-container #feed-posts form input[type="submit"]:hover {
+  background-color: #0062cc;
+}
+
+#home-container #feed-posts #post-list-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#home-container #feed-posts #post-list-container ul li {
+  border: 0px solid #6c757d;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#home-container #feed-posts #post-list-container ul li p {
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+#home-container #feed-posts #post-list-container ul li small {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+#home-container #feed-posts #post-list-container ul li .delete-link {
+  float: right;
+  font-size: 0.8rem;
+  color: #6c757d;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+#home-container #feed-posts #post-list-container ul li .delete-link:hover {
+  color: #007bff;
+}
+
+#home-container #user-friends {
+  flex: 1;
+  padding: 1rem;
+}
+
+#home-container #user-friends h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+  text-align: center;
+}
+
+#home-container #user-friends p {
+  margin: 0;
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+#home-container #user-friends p a {
+  color: #6c757d;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+#home-container #user-friends p a:hover {
+  color: #007bff;
+}
+
+.delete-post-button {
+  background-color: #e40c17;
+  color: white;
+  padding: 5px 7px;
+  text-decoration: none;
+  border-radius: 24px;
+}

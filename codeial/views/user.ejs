@@ -1,8 +1,25 @@
 <html>
 
 <link rel="stylesheet" href="/css/user.css" type="text/css">
-<h2>This is from Uesr vaaaaaaiea</h2>
-<p>Name : <%= user.name%></p>
-<p>Email : <%= user.email%></p>
+//<h2></h2>
 
-<p><a href="/users/signout" >signout</a></p>
+<img src="<%=user.avatar %>" alt="user.name" width="100">
+
+<!-- <p><a href="/users/signout" >signout</a></p> -->
+<%if (user.id == profile_user.id ) {%>
+<!-- if user matches then shoe the form -->
+<form action="/users/update/<%= profile_user.id%>" enctype="multipart/form-data" method="post">
+    <input type="text" name="name" placeholder="your name" value="<%= profile_user.name%>" style="width: 95%;" required>
+    <input type="email" name="email" placeholder="your email" value="<%= profile_user.email%>" style="width: 95%;border: 1px solid #ccc" required>
+    <input type="file" name="avatar" placeholder="profile image">
+    <input type="submit" name="submit" value="Update">
+
+</form>
+
+
+<% } else {%>
+
+<p style="text-align: center;">Name : <%= profile_user.name%></p>
+<p style="text-align: center;">Email : <%= profile_user.email%></p>
+
+<%}%>
