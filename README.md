@@ -11,7 +11,6 @@ Codeial is a social media web application built using Node.js, Express, and Mong
 - Post creation, deletion, and editing
 - Commenting and liking posts
 - User search functionality
-- Follow and unfollow other users
 - Notification system for new followers and post updates
 
 ## Installation
@@ -50,9 +49,7 @@ Codeial is a social media web application built using Node.js, Express, and Mong
 1. Register a new account or log in with an existing account.
 2. Create a new post by clicking on the "Create Post" button.
 3. Interact with posts by adding comments or likes.
-4. Search for other users and follow them to see their posts on your feed.
 5. Edit your profile information and update your profile picture.
-6. Receive notifications for new followers and post updates.
 
 ## Contributing
 
