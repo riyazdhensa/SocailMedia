@@ -20,6 +20,21 @@ router.post('/create-session',passport.authenticate(
 
 router.get('/signout', userController.destroySession);
 
+router.get('/auth/google', passport.authenticate('google', {
+    scope: ['profile', 'email'],
+    failureRedirect: '/users/signin',
+    callbackURL: 'http://localhost:8000/users/auth/google/callback',
+    redirect_uri: '/users/signin'
+  }));
+  
+  router.get('/auth/google/callback', passport.authenticate('google', {
+    failureRedirect: '/users/signin'
+  }), userController.createSession);
+
+// router.get('/auth/google',passport.authenticate('google',{ scope : ['profile','email']}));
+// router.get('/auth/google/callback',passport.authenticate('google',
+// {failureRedirect:'/users/signin'}),userController.createSession);
+
 //console.log('calling routes mmmmm22222');
 // router.get('/profile/:id', function(req, res){
 //     console.log('calling profile of usersss');
